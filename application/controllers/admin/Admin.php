@@ -8,6 +8,11 @@
  */
 class Admin extends CI_Controller
 {
+    public function __construct()
+    {
+        $this->load->model('category_model');
+    }
+
     public function index()
     {
         $this->load->view('admin/layout/admin_header_view');
@@ -18,6 +23,7 @@ class Admin extends CI_Controller
 
     public function category()
     {
+        $categories = $this->category_model->getCategory();
         $this->load->view('admin/layout/admin_header_view');
         $this->load->view('admin/layout/admin_sidebar_view');
         $this->load->view('admin/category_view');
@@ -34,8 +40,9 @@ class Admin extends CI_Controller
 
     public function create_category()
     {
-        $this->load->model('category_model');
         $name = $this->input->post('name');
+        $this->category_model->insertCategory($name);
+        redirect(base_url('admin/category'));
     }
 
     public function news()
