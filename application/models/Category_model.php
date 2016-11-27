@@ -13,6 +13,7 @@ class Category_model extends CI_Model
         return $this->db->get('categories');
         //SELECT * FROM categories
     }
+
     public function insertCategory($name)
     {
         //INSERT INTO category (name) VALUES ($name);
