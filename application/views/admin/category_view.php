@@ -20,7 +20,7 @@
                 </tr>
                 <?php
                 // ถ้า category ที่ return ออกมามีค่ามากกว่า 0
-                if ($categories->num_rows > 0) {
+                if ($categories->num_rows() > 0) {
                     foreach ($categories->result() as $category) {
                         ?>
                         <tr>
@@ -37,7 +37,7 @@
                         </tr>
                     <?php }
                 } else { ?>
-                    <tr>
+                    <tr class="text-center">
                         <td colspan="3">== ไม่มีข้อมูล ==</td>
                     </tr>
                 <?php } ?>
