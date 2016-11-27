@@ -12,16 +12,18 @@
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="bower_components/sb-admin-2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('bower_components/sb-admin-2/css/bootstrap.min.css') ?>" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="bower_components/sb-admin-2/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('bower_components/sb-admin-2/css/plugins/metisMenu/metisMenu.min.css') ?>"
+          rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="bower_components/sb-admin-2/css/sb-admin-2.css" rel="stylesheet">
+    <link href="<?php echo base_url('bower_components/sb-admin-2/css/sb-admin-2.css') ?>" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="bower_components/sb-admin-2/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url('bower_components/sb-admin-2/font-awesome-4.1.0/css/font-awesome.min.css') ?>"
+          rel="stylesheet" type="text/css">
 
 </head>
 
@@ -45,7 +47,7 @@
         <ul class="nav navbar-top-links navbar-right">
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-messages">
                     <li>
@@ -96,7 +98,7 @@
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-tasks">
                     <li>
@@ -107,7 +109,8 @@
                                     <span class="pull-right text-muted">40% Complete</span>
                                 </p>
                                 <div class="progress progress-striped active">
-                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                         aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                                         <span class="sr-only">40% Complete (success)</span>
                                     </div>
                                 </div>
@@ -123,7 +126,8 @@
                                     <span class="pull-right text-muted">20% Complete</span>
                                 </p>
                                 <div class="progress progress-striped active">
-                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20"
+                                         aria-valuemin="0" aria-valuemax="100" style="width: 20%">
                                         <span class="sr-only">20% Complete</span>
                                     </div>
                                 </div>
@@ -139,7 +143,8 @@
                                     <span class="pull-right text-muted">60% Complete</span>
                                 </p>
                                 <div class="progress progress-striped active">
-                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                                         aria-valuemin="0" aria-valuemax="100" style="width: 60%">
                                         <span class="sr-only">60% Complete (warning)</span>
                                     </div>
                                 </div>
@@ -155,7 +160,8 @@
                                     <span class="pull-right text-muted">80% Complete</span>
                                 </p>
                                 <div class="progress progress-striped active">
-                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                                         aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                                         <span class="sr-only">80% Complete (danger)</span>
                                     </div>
                                 </div>
@@ -175,7 +181,7 @@
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-alerts">
                     <li>
@@ -235,7 +241,7 @@
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user">
                     <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
@@ -309,7 +315,8 @@
                         <!-- /.nav-second-level -->
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span
+                                    class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="#">Second Level Item</a>
@@ -373,16 +380,16 @@
 <!-- /#wrapper -->
 
 <!-- jQuery Version 1.11.0 -->
-<script src="bower_components/sb-admin-2/js/jquery-1.11.0.js"></script>
+<script src="<?php echo base_url('bower_components/sb-admin-2/js/jquery-1.11.0.js') ?>"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="bower_components/sb-admin-2/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url('bower_components/sb-admin-2/js/bootstrap.min.js') ?>"></script>
 
 <!-- Metis Menu Plugin JavaScript -->
-<script src="bower_components/sb-admin-2/js/plugins/metisMenu/metisMenu.min.js"></script>
+<script src="<?php echo base_url('bower_components/sb-admin-2/js/plugins/metisMenu/metisMenu.min.js') ?>"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="bower_components/sb-admin-2/js/sb-admin-2.js"></script>
+<script src="<?php echo base_url('bower_components/sb-admin-2/js/sb-admin-2.js') ?>"></script>
 
 </body>
 
